@@ -27,7 +27,7 @@ local function isAllowed(list, value)
 end
 
 if not (isAllowed(allowedClientIds, currentClientId) and isAllowed(allowedUserIds, currentUserId)) then
-    LocalPlayer:Kick("Access denied! Client ID or User ID is not authorized.")
+    LocalPlayer:Kick("Access denied! not authorized.")
 else
     print("Access granted!")
 end
