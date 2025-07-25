@@ -22,5 +22,5 @@ end
 if not isAllowed(allowedClientIds, currentClientId) then
     LocalPlayer:Kick("Access denied! not authorized.")
 else
-    print("Access granted! Client ID is authorized.")
+    print("Access granted! authorized.")
 end
