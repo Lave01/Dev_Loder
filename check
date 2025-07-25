@@ -6,13 +6,13 @@ local currentClientId = RbxAnalyticsService:GetClientId()
 local currentUserId = LocalPlayer.UserId
 
 local allowedClientIds = {
-    "CLIENT_ID_1",
+    "D99F4B8D-7C19-4337-9F0D-7BD93C7C8858",
     "000",
     "000"
 }
 
 local allowedUserIds = {
-    12345678, -- UserId 1
+    9007229696, -- UserId 1
     0, -- UserId 2
     0  -- UserId 3
 }
