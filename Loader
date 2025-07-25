@@ -1,0 +1,33 @@
+local Players = game:GetService("Players")
+local RbxAnalyticsService = game:GetService("RbxAnalyticsService")
+
+local LocalPlayer = Players.LocalPlayer
+local currentClientId = RbxAnalyticsService:GetClientId()
+local currentUserId = LocalPlayer.UserId
+
+local allowedClientIds = {
+    "CLIENT_ID_1",
+    "000",
+    "000"
+}
+
+local allowedUserIds = {
+    12345678, -- UserId 1
+    0, -- UserId 2
+    0  -- UserId 3
+}
+
+local function isAllowed(list, value)
+    for _, v in ipairs(list) do
+        if v == value then
+            return true
+        end
+    end
+    return false
+end
+
+if not (isAllowed(allowedClientIds, currentClientId) and isAllowed(allowedUserIds, currentUserId)) then
+    LocalPlayer:Kick("Access denied! Client ID or User ID is not authorized.")
+else
+    print("Access granted!")
+end
