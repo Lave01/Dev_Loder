@@ -6,7 +6,7 @@ local currentClientId = RbxAnalyticsService:GetClientId()
 
 local allowedClientIds = {
     "D99F4B8D-7C19-4337-9F0D-7BD93C7C8858",
-    "000",
+    "819650CC-3D16-43F3-9BFA-B911560B0741",
     "000"
 }
 
